@@ -35,13 +35,13 @@ class GreedyAlg: # that s the worst alg i ve ever seen :joy:
                 self.N[arm] += 1
                 self.Q[arm] = self.Q[arm] + (1/self.N[arm])*(self.R[i] - self.Q[arm])
 
-                self.results.append(self.R)
-                self.Q = [0]*self.arms
-                self.N = [0]*self.arms
-                self.R = [0]*self.k
+            self.results.append(self.R)
+            self.Q = [0]*self.arms
+            self.N = [0]*self.arms
+            self.R = [0]*self.k
 
-                if t%100==0:
-                    print(f"{t}th iteration")
+            if t%100==0:
+                print(f"{t}th iteration")
 
         return self.results
 
@@ -71,13 +71,13 @@ class EGreedyAlg:
                 self.N[arm] += 1
                 self.Q[arm] = self.Q[arm] + (1/self.N[arm])*(self.R[i] - self.Q[arm])
 
-                self.results.append(self.R)
-                self.Q = [0]*self.arms
-                self.N = [0]*self.arms
-                self.R = [0]*self.k
+            self.results.append(self.R)
+            self.Q = [0]*self.arms
+            self.N = [0]*self.arms
+            self.R = [0]*self.k
 
-                if t%100==0:
-                    print(f"{t}th iteration")
+            if t%100==0:
+                print(f"{t}th iteration")
 
         return self.results
 
